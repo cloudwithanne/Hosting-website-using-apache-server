@@ -79,4 +79,5 @@ sudo nano index.html
 [View the script](./index.html)
 
 4. **Confirm your website is live by copying the and pasting your EC2 public IP on your browser**
-[Here is a screenshot of what your website will look like](./Screenshot-of-HTML-website-running-on-Ubuntu-Server.png)
+   
+[Here is a screenshot of what your website will look like](./Screenshot-of-HTML-website)
