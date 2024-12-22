@@ -54,9 +54,11 @@ sudo apt install apache2 -y
 ```
 
 5. **Ensure Apache2 is running**
-```sudo systemctl start apache2```
+```
+sudo systemctl start apache2
+```
 
-6. **Enable Apache2 is running on boot**
+7. **Enable Apache2 is running on boot**
 ```sudo systemctl enable apache2```
 
 
