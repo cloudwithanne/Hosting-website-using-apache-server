@@ -42,12 +42,11 @@ This document explains how to provision an AWS EC2 instance running Ubuntu, inst
 ## Installing Apache2 Web Server
 
 1. **Update System Packages** : This is to ensure the server has up to date system packages
-```sudo apt update
-```
+```bash
+sudo apt update
 
 3. **Install apache2** : This is the webserver the server will run on
 ```sudo apt install apache2 -y
-```
 
 5. **Ensure Apache2 is running**
 ```sudo systemctl start apache2```
