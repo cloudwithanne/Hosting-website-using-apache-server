@@ -25,8 +25,23 @@ This document explains how to provision an AWS EC2 instance running Ubuntu, inst
 
 4. **Security Group Configuration**:
    - Set up a security group to allow HTTP (port 80) and SSH (port 22):
-     - Type: **HTTP**, Protocol: **TCP**, Port Range: **80**, Source: **Anywhere (0.0.0.0/0)**.
-     - Type: **SSH**, Protocol: **TCP**, Port Range: **22**, Source: **Anywhere (0.0.0.0/0)**.
+     - Type: **HTTP**, Port: **80**, Source: **Anywhere (0.0.0.0/0)**.
+     - Type: **SSH**, Port: **22**, Source: **Anywhere (0.0.0.0/0)**.
        
 5. **Launch Instance**:  
    Click **Launch Instance**.
+
+
+## SSH into the EC2 Server
+
+1. **Click connect**
+   - Click on **connect** at the top right corner
+   - Connect into server using **EC2 Instance Connect**
+  
+
+## Installing Apache2 Web Server
+
+1. **Update System Packages**
+```
+sudo apt update -y
+```
