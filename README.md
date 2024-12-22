@@ -44,13 +44,11 @@ This document explains how to provision an AWS EC2 instance running Ubuntu, inst
 1. **Update System Packages** : This is to ensure the server has up to date system packages
 ```
 sudo apt update
-
 ```
 
 3. **Install apache2** : This is the webserver the server will run on
 ```
 sudo apt install apache2 -y
-
 ```
 
 5. **Ensure Apache2 is running**
@@ -59,17 +57,24 @@ sudo systemctl start apache2
 ```
 
 7. **Enable Apache2 is running on boot**
-```sudo systemctl enable apache2```
+```
+sudo systemctl enable apache2
+```
 
 
 ## Deploying the simple HTML page
 
 1. **Navigate to Apache's default web directory**
-```cd /var/www/html```
+```
+cd /var/www/html
+```
 
-2. **Create an index.html file**
-```sudo nano index.html```
+3. **Create an index.html file**
+```
+sudo nano index.html
+```
 
-3. **Add the script into the index.html file**
+5. **Add the script into the index.html file**
+   
 [View the script](./index.html)
 
