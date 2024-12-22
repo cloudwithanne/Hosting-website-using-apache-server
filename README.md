@@ -1,6 +1,6 @@
 # Hosting a Website on Apache Server
 
-This document explains how to provision an AWS EC2 instance running Ubuntu, installing Apache2, deploy a simple HTML page.
+This document explains how to provision an AWS EC2 instance running Ubuntu, installing Apache2, and deploying a simple HTML page.
 
 ## Table of Contents
 
