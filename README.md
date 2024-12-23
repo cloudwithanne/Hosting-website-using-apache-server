@@ -9,7 +9,7 @@ This document explains how to provision an AWS EC2 instance running Ubuntu, inst
 - [Installing Apache2 Web Server](#installing-apache2-web-server)
 - [Deploying the Simple HTML Page](#deploying-the-simple-html-page)
 - [Obtaining a Free Domain](#obtaining-a-free-domain)
-- [Configuring SSL with Let’s Encrypt](#configuring-ssl-with-let's-encrypt)
+- [Configuring SSL with Let’s Encrypt](#configuring-ssl-with-lets-encrypt)
 
 ## Provisioning the EC2 Instance
 
