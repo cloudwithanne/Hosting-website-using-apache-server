@@ -106,7 +106,8 @@ This further goes to showcase how a free domain was purchased and configured wit
 
 ### 3. Test the Subdomain
 1. Open a web browser and navigate to your subdomain (e.g., `http://anneusang.mooo.com`)
-[Here is a screenshot of what my website looks like](./Website-running-on-http-domain-name.png)
+
+[Here is a screenshot of my website running on HTTP](./Website-running-on-http-domain-name.png)
 
 
 ## Configuring SSL with Let’s Encrypt
@@ -147,6 +148,7 @@ sudo nano /etc/apache2/sites-available/default-ssl.conf
 sudo service apache2 restart
 ```
 6. Test your configuration using the domain name, now with https (eg., https://anneusang.mooo.com)
+
 [Here is a screenshot of my website running on HTTPS](./Website-running-on-HTTPS.png)
 
 
