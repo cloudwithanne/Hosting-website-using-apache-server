@@ -81,3 +81,72 @@ sudo nano index.html
 4. **Confirm your website is live by copying the and pasting your EC2 public IP on your browser**
    
 [Here is a screenshot of what your website will look like](./Website-running-with-IP.png)
+
+
+# Bonus
+This further goes to showcase how a free domain was purchased and configured with an SSL certificate
+
+## Obtaining a Free Domain
+
+### 1. Create an Account on Afraid.org
+1. Visit [FreeDNS Sign-Up Page](https://freedns.afraid.org/signup/).
+2. Fill in the required details (username, password, email) and fill in the CAPTCHA
+3. Submit the form to create your account.
+4. Activate your account from your email
+
+### 2. Search for a Free Subdomain
+1. From the dashboard, click on **Subdomains**
+2. Click the **Add Subdomain** link 
+3. **Type**: Select the record type (`A`)
+4. **Subdomain**: Enter the desired subdomain name (e.g., `anneusang.mooo.com`)
+5. **Destination**: Enter your server's public IP address (e.g., AWS EC2)
+6. Click **Save** to complete the process
+
+### 3. Test the Subdomain
+1. Open a web browser and navigate to your subdomain (e.g., `http://anneusang.mooo.com`)
+[Here is a screenshot of what my website looks like](./Website-running-on-http-domain-name.png)
+
+
+## Configuring SSL with Let’s Encrypt
+
+To do this, go back into your EC2 server and run the following scripts
+
+1. Install the Let's Encrypt client:
+```
+sudo apt install certbot
+```
+
+2. Run the certification process:
+```
+sudo certbot --apache
+```
+
+3. Create a new Apache configuration file for HTTPS:
+```
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+```
+
+4. Edit the file and add the following configuration:
+```
+<VirtualHost *:443>
+  ServerName your_domain_name
+  DocumentRoot /var/www/html
+
+  SSLEngine on
+  SSLCertificateFile /etc/letsencrypt/live/your_domain_name/cert.pem
+  SSLCertificateKeyFile /etc/letsencrypt/live/your_domain_name/privkey.pem
+</VirtualHost>
+```
+- Replace "your_domain_name" with your actual domain name.
+- Save and close the file (ctrl + o, enter, ctrl + x)
+
+5. Restart Apache to apply the changes
+```
+sudo service apache2 restart
+```
+6. Test your configuration using the domain name, now with https (eg., https://anneusang.mooo.com)
+[Here is a screenshot of my website running on HTTPS](./Website-running-on-HTTPS.png)
+
+
+
+
