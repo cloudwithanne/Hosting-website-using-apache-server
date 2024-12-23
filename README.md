@@ -80,4 +80,4 @@ sudo nano index.html
 
 4. **Confirm your website is live by copying the and pasting your EC2 public IP on your browser**
    
-[Here is a screenshot of what your website will look like](./Screenshot-of-HTML-website.png)
+[Here is a screenshot of what your website will look like](./Website-running-with-IP.png)
