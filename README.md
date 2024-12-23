@@ -1,6 +1,6 @@
 # Hosting a Website on Apache Server
 
-This document explains how to provision an AWS EC2 instance running Ubuntu, installing Apache2, and deploying a simple HTML page.
+This document explains how to provision an AWS EC2 instance running Ubuntu, installing Apache2, and deploying a simple HTML page, obtaining a free domain and configuring SSL certificate using Let's Encrypt
 
 ## Table of Contents
 
@@ -8,6 +8,8 @@ This document explains how to provision an AWS EC2 instance running Ubuntu, inst
 - [SSH into the EC2 Instance](#ssh-into-the-ec2-instance)
 - [Installing Apache2 Web Server](#installing-apache2-web-server)
 - [Deploying the Simple HTML Page](#deploying-the-simple-html-page)
+- [Obtaining a Free Domain](#obtaining-a-free-domain)
+- [Configuring SSL with Let’s Encrypt](#configuring-ssl-with-let's-encrypt)
 
 ## Provisioning the EC2 Instance
 
